@@ -1,0 +1,71 @@
+:root{
+    --green:#46e738aa;
+    --darkgreen:#2ebe7b6b;
+    --white:whitesmoke;
+    --gray:gray;
+    --darkgray:darkslategrey;
+}
+section.box, section.box h2, body{
+    background: linear-gradient(var(--gray),var(--darkgray))
+}
+section.box, section.box h2{
+    transition: all .5s ease-in-out;
+}
+section.box:hover, section.box:hover h2{
+box-shadow: inset 0px 0px 8px rgba(78, 134, 132, 1), 0px 0px 15px rgba(91, 170, 175, 1);
+}
+h1{
+    color: var(--green);
+    text-align: center;
+}
+section.description{
+    text-align: center;
+}
+h2.title{
+    color: var(--green);
+    border: 1px solid var(--white);
+    text-align: center;
+    margin: 0 10%;
+    position: relative;
+    top: -15px;
+    border-radius: 10px;
+}
+div.flexbox{
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+section.box{
+    border: 1px dashed var(--white);
+    width: 30%;
+    height: 32vh;
+    border-radius: 10px;
+    margin:2% 0;
+}
+p{
+    margin: 6%;
+}
+pre.code{
+    background: linear-gradient(var(--green), var(--darkgreen));
+    color: var(--white);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 6%;
+    user-select: all;
+}
+footer{
+    text-align: center;
+    color: var(--green);
+}
+@media screen and (max-width: 992px) {
+    section.box{
+        width: 47%;
+    }
+}
+@media screen and (max-width: 768px) {
+    section.box{
+        width: 95%;
+    }
+}
